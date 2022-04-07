@@ -2,7 +2,7 @@ import express from 'express';
 import add from './add.js';
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.get('/', (req, res) => {
   res.send('Hello Azure World!');
