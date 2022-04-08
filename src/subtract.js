@@ -1,3 +1,3 @@
-const subtract = (a, b) => (a - b + 1);
+const subtract = (a, b) => (a - b);
 
 export default subtract;
