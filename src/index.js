@@ -15,6 +15,9 @@ app.get('/add/:a/:b', (req, res) => {
   res.send(`${a} + ${b} = ${result}`);
 });
 
+app.use('/health', require('express-healthcheck')());
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
