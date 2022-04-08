@@ -5,7 +5,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', (req, res) => {
-  res.send('Hello Azure World');
+  res.send('Hello Azure World!');
 });
 
 app.get('/add/:a/:b', (req, res) => {
@@ -15,7 +15,6 @@ app.get('/add/:a/:b', (req, res) => {
   res.send(`${a} + ${b} = ${result}`);
 });
 
-app.use('/health', require('express-healthcheck')());
 
 
 app.listen(port, () => {
