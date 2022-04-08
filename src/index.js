@@ -18,7 +18,7 @@ app.get('/add/:a/:b', (req, res) => {
 
 app.get('/subtract/:a/:b', (req, res) => {
   const { a, b } = req.params;
-  const result = subtract(a,b);
+  const result = subtract(a, b);
 
   res.send(`${a} - ${b} = ${result}`);
 });
