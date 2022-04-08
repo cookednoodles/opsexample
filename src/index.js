@@ -6,7 +6,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', (req, res) => {
-  res.send('Hello Azure World');
+  res.send('Hello Azure World!');
 });
 
 app.get('/add/:a/:b', (req, res) => {
@@ -16,13 +16,13 @@ app.get('/add/:a/:b', (req, res) => {
   res.send(`${a} + ${b} = ${result}`);
 });
 
+
 app.get('/subtract/:a/:b', (req, res) => {
   const { a, b } = req.params;
   const result = subtract(a, b);
 
   res.send(`${a} - ${b} = ${result}`);
 });
-
 
 
 app.listen(port, () => {
